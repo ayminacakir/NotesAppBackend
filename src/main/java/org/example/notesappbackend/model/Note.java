@@ -17,7 +17,7 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="folderName",nullable = false)
+    @Column(name="folderName",nullable = false) //nullable bu alanın boş bırakılamayacağını gösterir mutlaka her notun bir foldertexi olacak
     private String folderName;
 
     @Column(name = "noteTitle",nullable = false)
