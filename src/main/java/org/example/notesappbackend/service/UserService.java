@@ -1,14 +1,14 @@
 package org.example.notesappbackend.service;
 
-import org.example.notesappbackend.Exceptions.NotFoundException;
-import org.example.notesappbackend.Exceptions.NotMatchedException;
-import org.example.notesappbackend.Exceptions.UserAlreadyExistsWithEmailException;
-import org.example.notesappbackend.Exceptions.UserAlreadyExistsWithUsernameException;
-import org.example.notesappbackend.notehandler.model.Note;
-import org.example.notesappbackend.notehandler.model.User;
-import org.example.notesappbackend.notehandler.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.example.notesappbackend.exceptions.NotFoundException;
+import org.example.notesappbackend.exceptions.NotMatchedException;
+import org.example.notesappbackend.exceptions.UserAlreadyExistsWithEmailException;
+import org.example.notesappbackend.exceptions.UserAlreadyExistsWithUsernameException;
+import org.example.notesappbackend.model.Note;
+import org.example.notesappbackend.model.User;
+import org.example.notesappbackend.repository.UserRepository;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
